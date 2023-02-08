@@ -8,11 +8,15 @@ import './fonts/TTTravels-Medium.ttf'
 import './fonts/TTTravels-ExtraBold.ttf'
 import './fonts/TTTravels-Black.ttf'
 import './index.css'
+import { BrowserRouter } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      {/* The rest of your app goes here */}
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 )
 

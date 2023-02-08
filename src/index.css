@@ -22,3 +22,63 @@
   src: local('TTTravels-Regular') url('./fonts/TTTravels-Medium.ttf')
     format('truetype');
 }
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* primary or main colors  */
+  --clr-primary-1: #191d29;
+  --clr-primary-2: #9dfe00;
+  --clr-primary-3: #14d9e5;
+}
+
+@media screen and (min-width: 568px) {
+  h1 {
+    font-size: 128px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 10px;
+  }
+  h6 {
+    font-size: 8px;
+  }
+}
