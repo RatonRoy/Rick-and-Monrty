@@ -1,13 +1,24 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: TTTravels;
+  font-weight: normal;
+  src: local('TTTravels-Regular') url('./fonts/TTTravels-Regular.ttf')
+    format('truetype');
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: TTTravels;
+  font-weight: bold;
+  src: local('TTTravels-Regular') url('./fonts/TTTravels-Bold.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: TTTravels;
+  font-weight: bolder;
+  src: local('TTTravels-Regular') url('./fonts/TTTravels-ExtraBold.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: TTTravels;
+  font-weight: 400;
+  src: local('TTTravels-Regular') url('./fonts/TTTravels-Medium.ttf')
+    format('truetype');
 }
