@@ -7,6 +7,7 @@ import './fonts/TTTravels-Bold.ttf'
 import './fonts/TTTravels-Medium.ttf'
 import './fonts/TTTravels-ExtraBold.ttf'
 import './fonts/TTTravels-Black.ttf'
+import './fonts/TTTravels-Italic.ttf'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 

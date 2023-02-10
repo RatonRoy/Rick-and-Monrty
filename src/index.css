@@ -7,20 +7,27 @@
 @font-face {
   font-family: TTTravels;
   font-weight: bold;
-  src: local('TTTravels-Regular') url('./fonts/TTTravels-Bold.ttf')
+  src: local('TTTravels-Bold') url('./fonts/TTTravels-Bold.ttf')
     format('truetype');
 }
 @font-face {
   font-family: TTTravels;
   font-weight: bolder;
-  src: local('TTTravels-Regular') url('./fonts/TTTravels-ExtraBold.ttf')
+  src: local('TTTravels-ExtraBold') url('./fonts/TTTravels-ExtraBold.ttf')
     format('truetype');
 }
 @font-face {
   font-family: TTTravels;
   font-weight: 400;
-  src: local('TTTravels-Regular') url('./fonts/TTTravels-Medium.ttf')
+  src: local('TTTravels-Medium') url('./fonts/TTTravels-Medium.ttf')
     format('truetype');
+}
+@font-face {
+  font-family: TTTravels;
+  font-weight: 800;
+  src: local('TTTravels-Italic') url('./fonts/TTTravels-Italic.ttf')
+    format('truetype');
+  font-style: italic;
 }
 
 *,
@@ -29,6 +36,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: TTTravels-Regular;
 }
 
 /*
@@ -81,4 +92,14 @@ Variables
   h6 {
     font-size: 8px;
   }
+}
+
+/* *************
+Global Styles .........
+*****************/
+img {
+  display: inline-block;
+}
+ul {
+  list-style: none;
 }
