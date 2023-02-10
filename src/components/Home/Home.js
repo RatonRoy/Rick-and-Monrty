@@ -1,15 +1,17 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
-import Background from '../../Media asset/Backgraund.png'
+import Hero from './Hero/Hero'
+// import Background from '../../Media asset/Backgraund.png'
 import './Home.css'
+import Spiral from './Spiral/Spiral'
 
 const Home = () => {
   return (
     <>
-      <h2> This is a home page </h2>
-      <div className='img-container'>
-        <img src={Background} alt='' />
-      </div>
+      <section className='home-container'>
+        <Hero />
+        {/* <Spiral className='spiral' /> */}
+      </section>
     </>
   )
 }
