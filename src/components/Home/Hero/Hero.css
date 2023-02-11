@@ -113,10 +113,13 @@ top: 585px;
   display: inline-block;
   width: 203px;
   height: 58px;
+  /* padding: 0.5rem 0; */
   background: linear-gradient(99.46deg, #9dfe00 -10.9%, #14d9e6 97.14%);
   border-radius: 100px;
   border: none;
   cursor: pointer;
+  color: white;
+  /* font-size: 1.1rem; */
 }
 .hero-text-container {
   margin-left: 64px;
@@ -134,4 +137,12 @@ top: 585px;
   font-size: 14px;
   line-height: 17px;
   color: #14d9e6;
+}
+.elements-mid {
+  position: relative;
+}
+.gun-image {
+  position: absolute;
+  right: -468px;
+  bottom: -178px;
 }

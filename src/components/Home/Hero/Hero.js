@@ -36,9 +36,7 @@ const Hero = () => {
               <span className='morty-text'>MORTY</span>{' '}
               <span className='wiki-text'> WIKI </span>
             </h2>
-            {/* <div className='gun-container'>
-              <img src={Gun} alt='' />
-            </div> */}
+            <img src={Gun} alt=' ' className='gun-image' />
           </div>
           {/* end of the element mid section  */}
           <footer className='elements-footer'>
@@ -64,8 +62,10 @@ const Hero = () => {
             </div>
           </footer>
         </article>
-        {/* End of the Gun  */}
+
+        <div className='gun-container'></div>
       </section>
+      {/* End of the Gun  */}
     </>
   )
 }
