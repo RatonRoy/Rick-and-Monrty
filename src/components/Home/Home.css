@@ -1,4 +1,12 @@
 .home-container {
+  background-image: linear-gradient(
+      rgba(15, 12, 41, 0.9),
+      rgba(36, 36, 62, 0.9)
+    ),
+    url('./HomeAsset/img/homebg/Нero-main-bg.png');
+  height: 1117px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .spiral {
 }

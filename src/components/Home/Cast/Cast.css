@@ -1,0 +1,13 @@
+.cast-container {
+  /* display: flex; */
+  /* padding: ; */
+  margin-left: 1rem;
+}
+.cast-img {
+  width: 258px;
+  height: 216px;
+}
+.cast-name {
+  font: 1rem;
+  color: white;
+}

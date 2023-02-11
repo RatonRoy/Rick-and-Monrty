@@ -1,0 +1,17 @@
+.casts-wrapper {
+  width: 1600px;
+  margin: 0 auto;
+}
+.casts-container {
+  display: flex;
+}
+.btn-cast {
+  display: inline-block;
+  border: none;
+  background-color: magenta;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}

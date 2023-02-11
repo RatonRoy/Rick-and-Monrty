@@ -1,9 +1,9 @@
-import axios from 'axios'
-import React, { useEffect } from 'react'
+// import axios from 'axios'
+import React from 'react'
+import Casts from './Casts/Casts'
 import Hero from './Hero/Hero'
-// import Background from '../../Media asset/Backgraund.png'
 import './Home.css'
-import Spiral from './Spiral/Spiral'
+// import Spiral from './Spiral/Spiral'
 
 const Home = () => {
   return (
@@ -11,6 +11,7 @@ const Home = () => {
       <section className='home-container'>
         <Hero />
         {/* <Spiral className='spiral' /> */}
+        <Casts />
       </section>
     </>
   )
