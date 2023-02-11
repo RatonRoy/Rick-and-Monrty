@@ -31,7 +31,7 @@
   align-items: center;
 }
 .hero-text {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: bolder;
 }
 .bubble-container {
@@ -55,7 +55,9 @@
 }
 .bubble-container img {
 }
-
+.elements-mid {
+  display: flex;
+}
 /* 
 background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%),
 linear-gradient(0deg, #FFFFFF, #FFFFFF);
@@ -81,4 +83,55 @@ linear-gradient(0deg, #FFFFFF, #FFFFFF);
   font-style: italic;
   font-weight: 800;
   font-family: TTTravels-Italic;
+}
+/* End of the hero header section  */
+/* 
+background: linear-gradient(99.46deg, #9DFE00 -10.9%, #14D9E6 97.14%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+*/
+.morty-text {
+  background: linear-gradient(99.46deg, #9dfe00 -10.9%, #14d9e6 97.14%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.wiki-text {
+  color: white;
+}
+.elements-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.hero-btn-container {
+}
+/* ******
+left: 627px;
+top: 585px;
+********* */
+.btn-hero {
+  display: inline-block;
+  width: 203px;
+  height: 58px;
+  background: linear-gradient(99.46deg, #9dfe00 -10.9%, #14d9e6 97.14%);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+.hero-text-container {
+  margin-left: 64px;
+}
+.hero-description {
+  /* position: absolute; */
+  width: 364px;
+  height: 51px;
+  /* left: 894px;
+  top: 590px; */
+
+  font-family: 'TT Travels';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #14d9e6;
 }

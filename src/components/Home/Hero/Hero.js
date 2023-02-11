@@ -5,6 +5,8 @@ import bubble from '../HomeAsset/img/New-Hero/bubble.png'
 import Gun from '../HomeAsset/img/hero/Gun.png'
 import pill from '../HomeAsset/img/hero/pill.png'
 import portal from '../HomeAsset/img/hero/portal.png'
+import { AiOutlinePlayCircle } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -29,9 +31,40 @@ const Hero = () => {
               <h2 className='hero-text and-text'> & </h2>
             </div>
           </header>
-          <div className='elements-mid'></div>
-          <footer className='elements-f'></footer>
+          <div className='elements-mid'>
+            <h2 className='hero-text'>
+              <span className='morty-text'>MORTY</span>{' '}
+              <span className='wiki-text'> WIKI </span>
+            </h2>
+            {/* <div className='gun-container'>
+              <img src={Gun} alt='' />
+            </div> */}
+          </div>
+          {/* end of the element mid section  */}
+          <footer className='elements-footer'>
+            <div className='hero-btn-container'>
+              <Link to='https://www.youtube.com/watch?v=KQ9Cgdsa9tc&ab_channel=ONEMedia'>
+                <button className='btn-hero'>
+                  {' '}
+                  <span className='btn-icon'>
+                    {' '}
+                    <AiOutlinePlayCircle />{' '}
+                  </span>{' '}
+                  Watch New
+                </button>
+              </Link>
+            </div>
+            {/* end of the btn section  */}
+            <div className='hero-text-container'>
+              <p className='hero-description'>
+                Brilliant but boozy scientist Rick hijacks his fretful teenage
+                grandson, Morty, for wild escapades in other worlds and
+                alternate dimensions.
+              </p>
+            </div>
+          </footer>
         </article>
+        {/* End of the Gun  */}
       </section>
     </>
   )
