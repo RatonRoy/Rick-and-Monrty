@@ -1,21 +1,22 @@
-import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import Cast from '../Cast/Cast'
+import axios from 'axios'
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
-import './Casts.css'
+import Episode from '../Episode/Episode'
+import './Episodes.css'
 
-const Casts = () => {
-  const [casts, setCasts] = useState([])
+const Episodes = () => {
+  const [episodes, setEpisodes] = useState([])
   const [index, setIndex] = useState(0)
 
-  const url = 'https://rickandmortyapi.com/api/character'
+  const url = 'https://rickandmortyapi.com/api/episode'
+
   const fetchData = async () => {
     try {
       // axios.get(), axios.post(),axios.put(), axios.delete()
       const response = await axios(url)
 
       // console.log(response.data.results)
-      setCasts(response.data.results)
+      setEpisodes(response.data.results)
     } catch (error) {
       console.log(error.response)
     }
@@ -26,31 +27,34 @@ const Casts = () => {
   }, [])
 
   const handleNext = () => {
-    setIndex((prevIndex) => (prevIndex + 1 >= casts.length ? 0 : prevIndex + 1))
+    setIndex((prevIndex) =>
+      prevIndex + 1 >= episodes.length ? 0 : prevIndex + 1
+    )
   }
 
   const handlePrev = () => {
     setIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? casts.length - 1 : prevIndex - 1
+      prevIndex - 1 < 0 ? episodes.length - 1 : prevIndex - 1
     )
   }
+
   return (
     <>
-      <section className='casts-wrapper'>
-        <div className='casts-header'>
-          <p className='text-header'> Meet The Cast </p>
-          <button className='btn-all-cast'> View All </button>
+      <section className='section-center episodes-container'>
+        <div className='section-header'>
+          <h2 className='section-title'> Episodes </h2>
         </div>
+        {/* end of the header section  */}
         <button onClick={handlePrev} className='btn-cast btn-prev'>
           <AiOutlineArrowLeft className='arrow-icon' />
         </button>
-        <div className='casts-container'>
-          {casts.slice(index, index + 6).map((cast) => (
-            <Cast key={cast.id} cast={cast}>
-              {/* {cast} */}
-            </Cast>
+        {/* End of the next button  */}
+        <div className='all-episodes'>
+          {episodes.slice(index, index + 4).map((episode) => (
+            <Episode key={episode.id} episodeData={episode}></Episode>
           ))}
         </div>
+        {/* End of the all-episodes sections */}
         <button onClick={handleNext} className='btn-cast btn-next'>
           <AiOutlineArrowRight className='arrow-icon' />
         </button>
@@ -59,4 +63,4 @@ const Casts = () => {
   )
 }
 
-export default Casts
+export default Episodes
