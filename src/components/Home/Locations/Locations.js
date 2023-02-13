@@ -14,7 +14,7 @@ const Locations = () => {
       // axios.get(), axios.post(),axios.put(), axios.delete()
       const response = await axios(url)
 
-      console.log(response.data.results)
+      // console.log(response.data.results)
       setLocations(response.data.results)
     } catch (error) {
       console.log(error.response)

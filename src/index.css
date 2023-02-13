@@ -101,9 +101,9 @@ img {
   display: inline-block;
 }
 ul {
-  list-style: none;
+  /* list-style: none; */
 }
-.section-center{
+.section-center {
   width: 90vw;
   margin: 0 auto;
   margin-top: 2rem;
