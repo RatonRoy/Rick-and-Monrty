@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
 import Location from './Location';
 import './Locations.css';
 
@@ -36,17 +37,21 @@ const Locations = () => {
     )
   }
  return (
-  <section className="section-center">
-   <h2 className='section-title'>Locations</h2>
-   <div className="locations">
-    {
-      locations.slice(index, index + 4).map((location) => (
-            <Location key={location.id} locationData={location}></Location>
-          ))
-    }
-   </div>
-  </section>
- );
+   <section className='section-center location-container'>
+     <h2 className='section-title'>Locations</h2>
+     <button onClick={handlePrev} className='btn-cast btn-prev'>
+       <AiOutlineArrowLeft className='arrow-icon' />
+     </button>
+     <div className='locations'>
+       {locations.slice(index, index + 4).map((location) => (
+         <Location key={location.id} locationData={location}></Location>
+       ))}
+     </div>
+     <button onClick={handleNext} className='btn-cast btn-next'>
+       <AiOutlineArrowRight className='arrow-icon' />
+     </button>
+   </section>
+ )
 };
 
 export default Locations;

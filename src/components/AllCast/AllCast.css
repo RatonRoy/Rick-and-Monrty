@@ -1,0 +1,21 @@
+.all-cast-container {
+  background-image: linear-gradient(
+      rgba(15, 12, 41, 0.9),
+      rgba(36, 36, 62, 0.9)
+    ),
+    url('./Cast-img/cast-bg.png');
+  min-height: 100vh;
+  background-size: cover;
+  margin-top: 2rem;
+}
+.all-casts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1.5rem;
+}
+.all-cast-title{
+ font-size: 2rem;
+ letter-spacing: 1px;
+ color: #14D9E5;
+ font-weight: bolder;
+}

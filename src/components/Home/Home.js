@@ -15,6 +15,7 @@ const Home = () => {
         <Hero />
         {/* <Spiral className='spiral' /> */}
         <Casts />
+        <div className="spiral-container"></div>
         <Episodes/>
         <Locations/>
       </section>

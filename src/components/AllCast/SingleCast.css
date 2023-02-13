@@ -1,0 +1,13 @@
+.single-cast {
+  padding: 0.5rem;
+  border: 0.7px solid rgba(132, 247, 41, 0.5);
+  border-radius: 0.4rem 0.4rem 3rem 0.4rem;
+  padding: 0.8rem;
+}
+.single-cast-name{
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+}
+
