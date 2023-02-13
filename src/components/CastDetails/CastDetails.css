@@ -124,7 +124,7 @@ background: radial-gradient(35.56% 83.6% at 50% 50%, rgba(217, 217, 217, 0) 0%, 
   letter-spacing: 1px;
   font-weight: bolder;
 }
-.episodes-container {
+.details-episodes-container {
   border: 1px solid rgb(33, 235, 22);
   margin-top: 2rem;
   height: 350px;

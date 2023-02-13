@@ -4,9 +4,13 @@
       rgba(36, 36, 62, 0.9)
     ),
     url('./Cast-img/cast-bg.png');
-  min-height: 100vh;
+  min-height: 1511px;
+  max-width: 1920px;
   background-size: cover;
   margin-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+  margin: 0 auto;
 }
 .all-casts {
   display: grid;

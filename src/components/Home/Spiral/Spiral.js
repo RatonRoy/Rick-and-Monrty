@@ -5,7 +5,7 @@ const Spiral = () => {
   return (
     <>
       <section className='spiral-container'>
-        <h3> this is spiral section here </h3>
+        {/* <h3> this is spiral section here </h3> */}
       </section>
     </>
   )

@@ -1,18 +1,15 @@
 .spiral-container {
-  background-image: linear-gradient(
-      rgba(15, 12, 41, 0.8) 60%,
-      rgba(36, 36, 62, 0.8) 40%
-    ),
+  background-image: 
     url('../HomeAsset/img/homebg/Spiral-Element.png');
-  color: red;
-  z-index: 10;
+  /* color: red; */
+  /* z-index: 10; */
   height: 617px;
   width: 524px;
-  /* position: absolute; */
-  position: relative;
+  position: absolute;
+  /* position: relative; */
 
   right: 0;
   bottom: 0;
 
-  border: 2px solid maroon;
+  /* border: 2px solid maroon; */
 }

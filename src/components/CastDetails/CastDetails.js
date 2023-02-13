@@ -123,7 +123,7 @@ const CastDetails = () => {
             </div>
           </div>
           {/* End of the location section  */}
-          <div className='episodes-container'>
+          <div className='details-episodes-container'>
             <img src={Episode} alt='' />
             <h2 className='section-title'> Episodes </h2>
             <div className='episodes-details-container'>
