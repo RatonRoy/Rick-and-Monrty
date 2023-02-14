@@ -18,17 +18,14 @@ background: radial-gradient(35.56% 83.6% at 50% 50%, rgba(217, 217, 217, 0) 0%, 
 .cast-details {
   display: grid;
   grid-template-columns: 45% 5% 45%;
-  /* align-items: center; */
 }
+
 .cast-details-img-container {
   position: relative;
   top: 20rem;
   left: 10rem;
   width: 350px;
   height: 350px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 .cast-details-img {
   padding: 1rem;
@@ -49,33 +46,20 @@ background: radial-gradient(35.56% 83.6% at 50% 50%, rgba(217, 217, 217, 0) 0%, 
   position: absolute;
   /* top: 50%; */
   position: relative;
-  top: 20rem ;
+  top: 20rem;
   right: 6rem;
 }
-
-/* .wrap-details {
-  display: flex;
-  align-items: center;
-  height: 1000px;
-  /* width: 800px; */
 
 .details-info {
   padding: 1rem;
   margin-top: 7rem;
-  /* width: 45%; */
-  /* background-color: #14d9e5; */
-
-  /* display: flex; */
-  /* align-items: center; */
 }
 .primary-infos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* color: white; */
 }
 .primary-info {
-  /* padding: 1rem 0.5rem; */
   width: 240px;
   height: 174px;
   display: flex;
@@ -84,6 +68,7 @@ background: radial-gradient(35.56% 83.6% at 50% 50%, rgba(217, 217, 217, 0) 0%, 
   border: 1px solid rgb(33, 235, 22);
   width: 28%;
   padding: 0 1rem;
+  background-color: rgba(69, 113, 72, 0.2);
 }
 .primary-img {
   width: 48px;
@@ -111,6 +96,7 @@ background: radial-gradient(35.56% 83.6% at 50% 50%, rgba(217, 217, 217, 0) 0%, 
   border: 2px solid rgb(33, 235, 22);
   padding: 1rem;
   position: relative;
+  background-color: rgba(69, 113, 72, 0.2);
 }
 .origin-icon {
   font-size: 2rem;
@@ -128,27 +114,85 @@ background: radial-gradient(35.56% 83.6% at 50% 50%, rgba(217, 217, 217, 0) 0%, 
   border: 1px solid rgb(33, 235, 22);
   margin-top: 2rem;
   height: 350px;
-  overflow:auto;
+  overflow: auto;
   padding: 1rem;
+  background-color: rgba(69, 113, 72, 0.2);
 }
 .episode-container {
   margin-top: 1rem;
 }
-.episodes-details-container{
+.episodes-details-container {
   /* height: 500px; */
   /* padding: 1rem ; */
 }
-.details-episode-list-container{
+.details-episode-list-container {
   /* background-color: lightblue; */
   width: 100%;
- 
+
   padding: 1rem;
   /* margin-left: 2rem; */
   padding-left: 2rem;
 }
-.details-episode-list{
+.details-episode-list {
   margin-left: 2.5rem;
   font-size: 2.5rem;
   color: white;
   font-weight: bolder;
 }
+/* ********************
+Responsive design for mobile 
+************* */
+@media screen and (max-width: 768px) {
+  .cast-details-container {
+    width: 95%;
+    margin: 0 auto;
+    position: static;
+  }
+  .cast-details {
+    display: block;
+    position: static;
+  }
+  .mid-line {
+    display: none;
+  }
+  .cast-details-img-container {
+    position: static;
+    margin: 0 auto;
+  }
+  .details-info {
+    position: static;
+    margin-top: 6rem;
+  }
+  .primary-info {
+    width: 28%;
+    height: 150px;
+    background-color: rgba(69, 113, 72, 0.2);
+  }
+  .primary-info p {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .primary-info img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+  .primary-info h2 {
+    font-size: 1.3rem;
+  }
+  .cast-origin-location-name {
+    font-size: 1.5rem;
+    margin-top: 5px;
+  }
+  .details-episodes-container {
+    height: 250px;
+  }
+  .details-episode-list {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-left: 0;
+  }
+}
+/* ********************
+End of the Responsive design for mobile 
+************* */

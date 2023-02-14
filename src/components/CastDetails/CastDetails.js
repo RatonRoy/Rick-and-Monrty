@@ -95,7 +95,7 @@ const CastDetails = () => {
               <h3>Origin </h3>
               <h2 className='cast-origin-location-name'>
                 {' '}
-                {/* {cast.origin.name}{' '} */}
+                {cast.origin.name}{' '}
               </h2>
             </div>
             {/* End of the origin info  */}
@@ -112,7 +112,7 @@ const CastDetails = () => {
               <p> Last Know Location </p>
               <h2 className='cast-origin-location-name'>
                 {' '}
-                {/* {cast.location.name}{' '}  */}
+                {cast.location.name}{' '}
               </h2>
             </div>
             {/* End of the location info section  */}
