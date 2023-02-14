@@ -52,7 +52,7 @@ const CastDetails = () => {
   return (
     <section className='cast-details-container'>
       <div className='logo-container'>
-        <img src={logo} alt='' />
+        <img src={logo} alt='' className='logo-img' />
       </div>
       {/* end of the logo container  */}
       <div className='cast-details section-center'>
@@ -95,7 +95,7 @@ const CastDetails = () => {
               <h3>Origin </h3>
               <h2 className='cast-origin-location-name'>
                 {' '}
-                {cast.origin.name}{' '}
+                {/* {cast.origin.name}{' '} */}
               </h2>
             </div>
             {/* End of the origin info  */}
@@ -112,7 +112,7 @@ const CastDetails = () => {
               <p> Last Know Location </p>
               <h2 className='cast-origin-location-name'>
                 {' '}
-                {cast.location.name}{' '}
+                {/* {cast.location.name}{' '} */}
               </h2>
             </div>
             {/* End of the location info section  */}

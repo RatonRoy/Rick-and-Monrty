@@ -2,6 +2,8 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Cast from '../Cast/Cast'
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from 'react-icons/ai'
+import { FaAngleRight } from 'react-icons/fa'
+import { FaAngleLeft } from 'react-icons/fa'
 import './Casts.css'
 
 const Casts = () => {
@@ -36,9 +38,10 @@ const Casts = () => {
   }
   return (
     <>
-      <section className='casts-wrapper'>
+      <section className='casts-wrapper casts-web-devices'>
         <div className='casts-header'>
-          <p className='text-header'> Meet The Cast </p>
+        
+            <p className='text-header'> Meet The Cast </p>
           <button className='btn-all-cast'> View All </button>
         </div>
         <button onClick={handlePrev} className='btn-cast btn-prev'>
@@ -55,8 +58,34 @@ const Casts = () => {
           <AiOutlineArrowRight className='arrow-icon' />
         </button>
       </section>
+      {/* For mobile response  */}
+      <section className='casts-wrapper mobile-cast-wrapper'>
+        <div className='casts-header'>
+          <div className='casts-header-container'>
+            <p className='text-header'> Meet The Cast </p>
+            <div className='angle-icons'>
+              <FaAngleLeft />
+              <FaAngleRight />
+            </div>
+          </div>
+          <button className='btn-all-cast'> View All </button>
+        </div>
+        <button onClick={handlePrev} className='btn-cast btn-prev'>
+          <AiOutlineArrowLeft className='arrow-icon' />
+        </button>
+        <div className='casts-container'>
+          {casts.slice(index, index + 2).map((cast) => (
+            <Cast key={cast.id} cast={cast}>
+              {/* {cast} */}
+            </Cast>
+          ))}
+        </div>
+        <button onClick={handleNext} className='btn-cast btn-next'>
+          <AiOutlineArrowRight className='arrow-icon' />
+        </button>
+      </section>
     </>
   )
 }
 
-export default Casts
+export default Casts 

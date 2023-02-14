@@ -37,20 +37,37 @@ const Locations = () => {
     )
   }
  return (
-   <section className='section-center location-container'>
-     <h2 className='section-title'>Locations</h2>
-     <button onClick={handlePrev} className='btn-cast btn-prev location-prev'>
-       <AiOutlineArrowLeft className='arrow-icon' />
-     </button>
-     <div className='locations'>
-       {locations.slice(index, index + 4).map((location) => (
-         <Location key={location.id} locationData={location}></Location>
-       ))}
-     </div>
-     <button onClick={handleNext} className='btn-cast btn-next location-next'>
-       <AiOutlineArrowRight className='arrow-icon' />
-     </button>
-   </section>
+   <>
+     <section className='section-center location-container casts-web-devices'>
+       <h2 className='section-title'>Locations</h2>
+       <button onClick={handlePrev} className='btn-cast btn-prev location-prev'>
+         <AiOutlineArrowLeft className='arrow-icon' />
+       </button>
+       <div className='locations'>
+         {locations.slice(index, index + 4).map((location) => (
+           <Location key={location.id} locationData={location}></Location>
+         ))}
+       </div>
+       <button onClick={handleNext} className='btn-cast btn-next location-next'>
+         <AiOutlineArrowRight className='arrow-icon' />
+       </button>
+     </section>
+     {/* For mobile devices  */}
+     <section className='section-center location-container mobile-cast-wrapper'>
+       <h2 className='section-title'>Locations</h2>
+       <button onClick={handlePrev} className='btn-cast btn-prev location-prev'>
+         <AiOutlineArrowLeft className='arrow-icon' />
+       </button>
+       <div className='locations'>
+         {locations.slice(index, index + 2).map((location) => (
+           <Location key={location.id} locationData={location}></Location>
+         ))}
+       </div>
+       <button onClick={handleNext} className='btn-cast btn-next location-next'>
+         <AiOutlineArrowRight className='arrow-icon' />
+       </button>
+     </section>
+   </>
  )
 };
 

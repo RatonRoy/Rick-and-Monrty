@@ -7,13 +7,16 @@
    /* min-height: 1397px; */
   max-width: 1920px;
   min-height: 1117px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
   margin: 0 auto;
   padding: 1rem 0;
   padding-bottom: 2rem;
   position: relative;
   margin-bottom: 2rem;
+}
+.logo-container{
+text-align: center;
 }
 .star-one{
   position: absolute;
@@ -39,3 +42,16 @@
   rgba(36, 36, 62, 0.8)
 
 **************************/
+
+@media screen and (max-width : 768px ) {
+  .star-one{
+    display: none;
+  }
+  .star-two{
+    display: none;
+  }
+  .star-three{
+    display: none;
+  }
+  
+}

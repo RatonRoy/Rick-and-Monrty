@@ -14,3 +14,13 @@
 .episode-next{
   bottom: 20% !important;
 }
+
+/* For mobile devices  */
+@media screen and (max-width : 768px ) {
+  .all-episodes{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+}

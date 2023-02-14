@@ -28,4 +28,5 @@ const EpisodesDetails = () => {
   )
 }
 
-export default EpisodesDetails
+export default EpisodesDetails;
+

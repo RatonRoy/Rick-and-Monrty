@@ -31,19 +31,21 @@ const AllCast = () => {
     <>
       <section className='all-cast-container'>
         <div className='logo-container'>
-          <img src={logo} alt='' />
+          <img src={logo} alt='' className='logo-img' />
         </div>
-        <div className="cast-star-one">
-          <img src= {starO} alt="" />
+        <div className='cast-star-one'>
+          <img src={starO} alt='' />
         </div>
-        <div className="cast-star-two">
-          <img src= {starT} alt="" />
+        <div className='cast-star-two'>
+          <img src={starT} alt='' />
         </div>
-        <div className="cast-star-three">
-          <img src= {starTh} alt="" />
+        <div className='cast-star-three'>
+          <img src={starTh} alt='' />
         </div>
         {/* End of the Logo container section  */}
-        <h1 className="section-title section-center  all-cast-title">The Casts </h1>
+        <h1 className='section-title section-center  all-cast-title'>
+          The Casts{' '}
+        </h1>
         <div className='all-casts section-center'>
           {casts.map((cast) => (
             <SingleCast key={cast.id} cast={cast} />
@@ -55,3 +57,4 @@ const AllCast = () => {
 }
 
 export default AllCast
+

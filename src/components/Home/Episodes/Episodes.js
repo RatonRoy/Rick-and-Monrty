@@ -40,7 +40,7 @@ const Episodes = () => {
 
   return (
     <>
-      <section className='section-center episodes-container'>
+      <section className='section-center episodes-container casts-web-devices'>
         <div className='section-header'>
           <h2 className='section-title'> Episodes </h2>
         </div>
@@ -51,6 +51,27 @@ const Episodes = () => {
         {/* End of the next button  */}
         <div className='all-episodes'>
           {episodes.slice(index, index + 4).map((episode) => (
+            <Episode key={episode.id} episodeData={episode}></Episode>
+          ))}
+        </div>
+        {/* End of the all-episodes sections */}
+        <button onClick={handleNext} className='btn-cast btn-next episode-next'>
+          <AiOutlineArrowRight className='arrow-icon' />
+        </button>
+      </section>
+
+      {/* For mobile design  */}
+      <section className='section-center episodes-container mobile-cast-wrapper'>
+        <div className='section-header'>
+          <h2 className='section-title'> Episodes </h2>
+        </div>
+        {/* end of the header section  */}
+        <button onClick={handlePrev} className='btn-cast btn-prev episode-prev'>
+          <AiOutlineArrowLeft className='arrow-icon' />
+        </button>
+        {/* End of the next button  */}
+        <div className='all-episodes'>
+          {episodes.slice(index, index + 2).map((episode) => (
             <Episode key={episode.id} episodeData={episode}></Episode>
           ))}
         </div>

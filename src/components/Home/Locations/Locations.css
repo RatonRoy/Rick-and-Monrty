@@ -31,3 +31,26 @@
 .location-next{
  bottom: 20% !important;
 }
+
+@media screen and (max-width : 768px) {
+  .casts-web-devices{
+    display: none;
+  }
+  .mobile-cast-wrapper{
+    display: block;
+  }
+  .locations{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .location{
+   width: 45%;
+   margin-left: 0;
+  }
+
+  .btn-cast{
+   padding: 0.3rem;
+  }
+  
+ }

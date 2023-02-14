@@ -30,3 +30,42 @@
   display: flex;
   justify-content: flex-start;
 }
+.mobile-cast-wrapper{
+  display: none;
+}
+/* **********
+For mobile devices 
+ */
+ @media screen and (max-width : 768px) {
+  .casts-web-devices{
+    display: none;
+  }
+  .mobile-cast-wrapper{
+    display: block;
+  }
+  .casts-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text-header{
+    font-size: 1rem;
+  }
+  .btn-all-cast{
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .casts-header-container{
+    display: flex;
+    color: white;
+    align-items: center;
+  }
+  .angle-icons{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+ }

@@ -36,3 +36,10 @@ border-image-source: linear-gradient(331.82deg, rgba(132, 247, 41, 0.7) -5.31%, 
   margin-top: 0.5rem;
   font-weight: 500;
 }
+@media screen and (max-width : 768px) {
+  .cast-container{
+    width: 45%;
+    margin-left: 0;
+  }
+  
+}

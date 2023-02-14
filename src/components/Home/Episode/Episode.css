@@ -20,3 +20,11 @@
   font-size: 1.3rem;
   letter-spacing: 1px;
 }
+
+@media screen and (max-width : 768px) {
+  .episode{
+    width: 45%;
+    margin-left: 0;
+  }
+  
+}
