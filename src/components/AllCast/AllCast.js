@@ -3,6 +3,9 @@ import logo from './Cast-img/Logo.png'
 import axios from 'axios'
 import './AllCast.css'
 import SingleCast from './SingleCast'
+import starO from './Cast-img/Star-22.png'
+import starT from './Cast-img/Star-24.png'
+import starTh from './Cast-img/Star-23.png'
 
 const AllCast = () => {
   const [casts, setCasts] = useState([])
@@ -29,6 +32,15 @@ const AllCast = () => {
       <section className='all-cast-container'>
         <div className='logo-container'>
           <img src={logo} alt='' />
+        </div>
+        <div className="cast-star-one">
+          <img src= {starO} alt="" />
+        </div>
+        <div className="cast-star-two">
+          <img src= {starT} alt="" />
+        </div>
+        <div className="cast-star-three">
+          <img src= {starTh} alt="" />
         </div>
         {/* End of the Logo container section  */}
         <h1 className="section-title section-center  all-cast-title">The Casts </h1>

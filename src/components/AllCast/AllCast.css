@@ -11,6 +11,7 @@
   padding-bottom: 2rem;
   position: relative;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 .all-casts {
   display: grid;
@@ -22,4 +23,20 @@
  letter-spacing: 1px;
  color: #14D9E5;
  font-weight: bolder;
+}
+.cast-star-one{
+  position: absolute;
+  top: 25%;
+}
+.cast-star-two{
+  position:absolute;
+  bottom: 25%;
+  right: 0;
+
+}
+.cast-star-three{
+  position: absolute;
+  bottom: 0.7rem;
+  left: 50%;
+
 }
