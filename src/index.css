@@ -108,3 +108,31 @@ ul {
   margin: 0 auto;
   margin-top: 2rem;
 }
+
+.btn-cast {
+  display: inline-block;
+  border: none;
+  background-color: white;
+  color: rgb(54, 112, 7);
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+.btn-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.btn-next {
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+}
+.arrow-icon {
+  /* font-size: 1rem; */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+

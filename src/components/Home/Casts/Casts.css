@@ -28,32 +28,5 @@
 }
 .casts-container {
   display: flex;
-  justify-content: space-between;
-  /* background-color: gray; */
-}
-.btn-cast {
-  display: inline-block;
-  border: none;
-  background-color: white;
-  color: rgb(54, 112, 7);
-  padding: 0.5rem;
-  cursor: pointer;
-  border-radius: 50%;
-
-  cursor: pointer;
-}
-.btn-prev {
-  position: absolute;
-  left: 0;
-  top: 40%;
-}
-.btn-next {
-  position: absolute;
-  right: 0;
-  bottom: 40%;
-}
-.arrow-icon {
-  /* font-size: 1rem; */
-  font-weight: bold;
-  font-size: 1.5rem;
+  justify-content: flex-start;
 }
