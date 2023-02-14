@@ -4,20 +4,30 @@
 .locations{
  display: flex; 
  align-items: center;
- justify-content: space-between;
+ justify-content: flex-start;
 
 }
 .location{
- width: 20%;
+ width: 23%;
  border: 1px solid rgb(88, 227, 50);
   padding: 1.5rem 1rem;
   color: white;
+  margin-left: 2.5rem;
 
  /* margin: auto; */
+}
+.location:first-child{
+ margin-left: 0;
 }
 .location-id{
  font-size: 1.3rem;
 }
 .location-name{
  font-size: 1.5rem ;
+}
+.location-prev{
+ left: -1.5rem !important;
+}
+.location-next{
+ bottom: 20% !important;
 }

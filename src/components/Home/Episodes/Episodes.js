@@ -45,10 +45,7 @@ const Episodes = () => {
           <h2 className='section-title'> Episodes </h2>
         </div>
         {/* end of the header section  */}
-        <button
-          onClick={handlePrev}
-          className='btn-cast btn-prev btn-prev-episode'
-        >
+        <button onClick={handlePrev} className='btn-cast btn-prev episode-prev'>
           <AiOutlineArrowLeft className='arrow-icon' />
         </button>
         {/* End of the next button  */}
@@ -58,7 +55,7 @@ const Episodes = () => {
           ))}
         </div>
         {/* End of the all-episodes sections */}
-        <button onClick={handleNext} className='btn-cast btn-next'>
+        <button onClick={handleNext} className='btn-cast btn-next episode-next'>
           <AiOutlineArrowRight className='arrow-icon' />
         </button>
       </section>

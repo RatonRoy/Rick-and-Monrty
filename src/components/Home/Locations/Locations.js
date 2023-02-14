@@ -6,7 +6,7 @@ import './Locations.css';
 
 const Locations = () => {
  const [locations, setLocations] = useState([])
- const [index, setIndex] = useState([])
+ const [index, setIndex] = useState(0)
   const url = 'https://rickandmortyapi.com/api/location'
 
   const fetchData = async () => {
@@ -39,7 +39,7 @@ const Locations = () => {
  return (
    <section className='section-center location-container'>
      <h2 className='section-title'>Locations</h2>
-     <button onClick={handlePrev} className='btn-cast btn-prev'>
+     <button onClick={handlePrev} className='btn-cast btn-prev location-prev'>
        <AiOutlineArrowLeft className='arrow-icon' />
      </button>
      <div className='locations'>
@@ -47,7 +47,7 @@ const Locations = () => {
          <Location key={location.id} locationData={location}></Location>
        ))}
      </div>
-     <button onClick={handleNext} className='btn-cast btn-next'>
+     <button onClick={handleNext} className='btn-cast btn-next location-next'>
        <AiOutlineArrowRight className='arrow-icon' />
      </button>
    </section>

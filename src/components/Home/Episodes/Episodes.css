@@ -3,12 +3,14 @@
 }
 .all-episodes {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 
 }
-.btn-prev-episode{
- top : 50%;
- position: absolute;
-  
+.episode-prev{
+  top: 60%;
+  left: -1.5rem !important;
+}
+.episode-next{
+  bottom: 20% !important;
 }
