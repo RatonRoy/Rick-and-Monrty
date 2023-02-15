@@ -98,7 +98,7 @@ const CastDetails = () => {
               <h3>Origin </h3>
               <h2 className='cast-origin-location-name'>
                 {' '}
-                {/* {cast.origin.name}{' '} */}
+                {cast?.origin?.name || 'Earth (C-137)'}{' '}
               </h2>
             </div>
             {/* End of the origin info  */}
@@ -112,10 +112,10 @@ const CastDetails = () => {
           <div className='location-container origin-container'>
             <div className='location-info'>
               <img src={Location} alt='' />
-              <p> Last Know Location </p>
+              <h3> Last Know Location </h3>
               <h2 className='cast-origin-location-name'>
                 {' '}
-                {/* {cast.location.name}{' '} */}
+                {cast?.location?.name || 'Citadel of Ricks'}{' '}
               </h2>
             </div>
             {/* End of the location info section  */}

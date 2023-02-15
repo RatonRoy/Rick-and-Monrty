@@ -75,6 +75,9 @@
   bottom: 1rem;
   right: 1rem;
 }
+.origin-info h3, .location-info h3{
+  margin: 0.3rem 0;
+}
 .cast-origin-location-name {
   font-size: 2rem;
   letter-spacing: 1px;
@@ -126,7 +129,7 @@ Responsive design for tablet devices
 }
 .mid-line { 
     width: 1px;
-    height: 400px;
+    height: 450px;
     background-color: rgba(33, 235, 22, 0.6); 
 
   }
