@@ -55,10 +55,13 @@ const CastDetails = () => {
         <img src={logo} alt='' className='logo-img' />
       </div>
       {/* end of the logo container  */}
+
       <div className='cast-details section-center'>
         <div className='cast-details-img-container'>
-          <h2 className='cast-image-name'>{cast.name}</h2>
-          <img src={cast.image} alt='' className='cast-details-img' />
+          <div className='img-name-cast-details-container'>
+            <h2 className='cast-image-name'> {cast.name}</h2>
+            <img src={cast.image} alt='' className='cast-details-img' />
+          </div>
         </div>
         {/* End of the image container */}
         <div className='mid-line'></div>
@@ -125,7 +128,7 @@ const CastDetails = () => {
           {/* End of the location section  */}
           <div className='details-episodes-container'>
             <img src={Episode} alt='' />
-            <h2 className='section-title'> Episodes </h2>
+            <h2 className='episode-name-details'> Episode(S) </h2>
             <div className='episodes-details-container'>
               <EpisodesDetails />
             </div>
