@@ -45,17 +45,37 @@ const Episodes = () => {
           <h2 className='section-title'> Episodes </h2>
         </div>
         {/* end of the header section  */}
-        <button onClick={handlePrev} className='btn-cast btn-prev episode-prev'>
+        <button onClick={handlePrev} className='btn-prev episode-prev'>
           <AiOutlineArrowLeft className='arrow-icon' />
         </button>
         {/* End of the next button  */}
         <div className='all-episodes'>
-          {episodes.slice(index, index + 4).map((episode) => (
+          {episodes.slice(index, index + 5).map((episode) => (
             <Episode key={episode.id} episodeData={episode}></Episode>
           ))}
         </div>
         {/* End of the all-episodes sections */}
-        <button onClick={handleNext} className='btn-cast btn-next episode-next'>
+        <button onClick={handleNext} className='btn-next episode-next'>
+          <AiOutlineArrowRight className='arrow-icon' />
+        </button>
+      </section>
+      {/* End of the Desktop markup  */}
+      <section className='section-center episodes-container casts-tablet-devices'>
+        <div className='section-header'>
+          <h2 className='section-title'> Episodes </h2>
+        </div>
+        {/* end of the header section  */}
+        <button onClick={handlePrev} className='btn-prev episode-prev'>
+          <AiOutlineArrowLeft className='arrow-icon' />
+        </button>
+        {/* End of the next button  */}
+        <div className='all-episodes'>
+          {episodes.slice(index, index + 3).map((episode) => (
+            <Episode key={episode.id} episodeData={episode}></Episode>
+          ))}
+        </div>
+        {/* End of the all-episodes sections */}
+        <button onClick={handleNext} className='btn-next episode-next'>
           <AiOutlineArrowRight className='arrow-icon' />
         </button>
       </section>
@@ -66,7 +86,7 @@ const Episodes = () => {
           <h2 className='section-title'> Episodes </h2>
         </div>
         {/* end of the header section  */}
-        <button onClick={handlePrev} className='btn-cast btn-prev episode-prev'>
+        <button onClick={handlePrev} className='btn-prev episode-prev'>
           <AiOutlineArrowLeft className='arrow-icon' />
         </button>
         {/* End of the next button  */}
@@ -76,7 +96,7 @@ const Episodes = () => {
           ))}
         </div>
         {/* End of the all-episodes sections */}
-        <button onClick={handleNext} className='btn-cast btn-next episode-next'>
+        <button onClick={handleNext} className='btn-next episode-next'>
           <AiOutlineArrowRight className='arrow-icon' />
         </button>
       </section>

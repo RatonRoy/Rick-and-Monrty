@@ -40,15 +40,30 @@ const Locations = () => {
    <>
      <section className='section-center location-container casts-web-devices'>
        <h2 className='section-title'>Locations</h2>
-       <button onClick={handlePrev} className='btn-cast btn-prev location-prev'>
+       <button onClick={handlePrev} className='btn-prev location-prev'>
          <AiOutlineArrowLeft className='arrow-icon' />
        </button>
        <div className='locations'>
-         {locations.slice(index, index + 4).map((location) => (
+         {locations.slice(index, index + 5).map((location) => (
            <Location key={location.id} locationData={location}></Location>
          ))}
        </div>
-       <button onClick={handleNext} className='btn-cast btn-next location-next'>
+       <button onClick={handleNext} className='btn-next location-next'>
+         <AiOutlineArrowRight className='arrow-icon' />
+       </button>
+     </section>
+     {/* End of the desktop layout  */}
+     <section className='section-center location-container casts-tablet-devices'>
+       <h2 className='section-title'>Locations</h2>
+       <button onClick={handlePrev} className='btn-prev location-prev'>
+         <AiOutlineArrowLeft className='arrow-icon' />
+       </button>
+       <div className='locations'>
+         {locations.slice(index, index + 3).map((location) => (
+           <Location key={location.id} locationData={location}></Location>
+         ))}
+       </div>
+       <button onClick={handleNext} className='btn-next location-next'>
          <AiOutlineArrowRight className='arrow-icon' />
        </button>
      </section>

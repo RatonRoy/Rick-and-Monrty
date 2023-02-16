@@ -38,13 +38,12 @@ const Casts = () => {
   }
   return (
     <>
-      <section className='casts-wrapper casts-web-devices'>
+      <section className='casts-wrapper casts-web-devices section-center section-center'>
         <div className='casts-header'>
-        
-            <p className='text-header'> Meet The Cast </p>
+          <p className='text-header'> Meet The Cast </p>
           <button className='btn-all-cast'> View All </button>
         </div>
-        <button onClick={handlePrev} className='btn-cast btn-prev'>
+        <button onClick={handlePrev} className='cast-prev btn-prev'>
           <AiOutlineArrowLeft className='arrow-icon' />
         </button>
         <div className='casts-container'>
@@ -54,12 +53,34 @@ const Casts = () => {
             </Cast>
           ))}
         </div>
-        <button onClick={handleNext} className='btn-cast btn-next'>
+        <button onClick={handleNext} className='cast-next btn-next'>
           <AiOutlineArrowRight className='arrow-icon' />
         </button>
       </section>
-      {/* For mobile response  */}
-      <section className='casts-wrapper mobile-cast-wrapper'>
+      {/* End of the desktop */}
+      <section className='casts-wrapper casts-tablet-devices section-center'>
+        <div className='casts-header'>
+          <p className='text-header'> Meet The Cast </p>
+          <button className='btn-all-cast'> View All </button>
+        </div>
+        <button onClick={handlePrev} className='cast-prev btn-prev'>
+          <AiOutlineArrowLeft className='arrow-icon' />
+        </button>
+        <div className='casts-container'>
+          {casts.slice(index, index + 3).map((cast) => (
+            <Cast key={cast.id} cast={cast}>
+              {/* {cast} */}
+            </Cast>
+          ))}
+        </div>
+        <button onClick={handleNext} className='cast-next btn-next'>
+          <AiOutlineArrowRight className='arrow-icon' />
+        </button>
+      </section>
+      {/* End of the tablet devices  */}
+
+      {/* For mobile devices  */}
+      <section className='casts-wrapper mobile-cast-wrapper section-center'>
         <div className='casts-header'>
           <div className='casts-header-container'>
             <p className='text-header'> Meet The Cast </p>
@@ -70,7 +91,7 @@ const Casts = () => {
           </div>
           <button className='btn-all-cast'> View All </button>
         </div>
-        <button onClick={handlePrev} className='btn-cast btn-prev'>
+        <button onClick={handlePrev} className='cast-prev btn-prev'>
           <AiOutlineArrowLeft className='arrow-icon' />
         </button>
         <div className='casts-container'>
@@ -80,7 +101,7 @@ const Casts = () => {
             </Cast>
           ))}
         </div>
-        <button onClick={handleNext} className='btn-cast btn-next'>
+        <button onClick={handleNext} className='cast-next btn-next'>
           <AiOutlineArrowRight className='arrow-icon' />
         </button>
       </section>
@@ -88,4 +109,4 @@ const Casts = () => {
   )
 }
 
-export default Casts 
+export default Casts

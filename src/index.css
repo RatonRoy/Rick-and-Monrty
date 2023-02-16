@@ -121,19 +121,21 @@ ul {
 
   cursor: pointer;
 }
-.btn-prev {
-  position: absolute;
-  left: 0;
-  top: 50%;
-}
+.btn-prev,
 .btn-next {
   position: absolute;
-  right: 0;
-  bottom: 30%;
-}
-.arrow-icon {
-  /* font-size: 1rem; */
-  font-weight: bold;
-  font-size: 1.5rem;
+  background-color: white;
+   border-radius: 50%; 
+   border: none;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;   
+
 }
 
+.arrow-icon {
+  /* font-weight: bold; */
+  /* font-size: 1rem; */
+  color: rgb(54, 112, 7);
+}

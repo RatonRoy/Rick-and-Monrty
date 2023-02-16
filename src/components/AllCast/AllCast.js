@@ -27,6 +27,7 @@ const AllCast = () => {
   useEffect(() => {
     fetchData()
   }, [])
+  
   return (
     <>
       <section className='all-cast-container'>

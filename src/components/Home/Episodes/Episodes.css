@@ -1,26 +1,39 @@
-.episodes-container{
- position: relative;
+.episodes-container {
+  position: relative;
 }
 .all-episodes {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+.episode-prev {
+  top: 50%;
+  width: 25px;
+  height: 25px;
+}
 
+.episode-next {
+  width: 25px;
+  height: 25px;
+  bottom : 30% ; 
+  right: 0;
 }
-.episode-prev{
-  top: 60%;
-  left: -1.5rem !important;
+.episode{
+  display: flex;
+  align-items: center;
 }
-.episode-next{
-  bottom: 20% !important;
+.episode-info p{
+  font-size: 16px;
 }
+.episode-info h2{
+  font-size: 20px;
+}
+
 
 /* For mobile devices  */
-@media screen and (max-width : 768px ) {
-  .all-episodes{
+@media screen and (max-width: 768px) {
+  .all-episodes {
     display: flex;
     justify-content: space-between;
   }
-  
-  
 }

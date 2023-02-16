@@ -6,8 +6,10 @@ const Episode = ({ episodeData }) => {
 
   return (
     <div className='episode'>
-      <p className='episode-text'> {episode} </p>
-      <h2> {name} </h2>
+      <div className='episode-info'>
+        <p className='episode-text'> {episode} </p>
+        <h2> {name} </h2>
+      </div>
     </div>
   )
 }

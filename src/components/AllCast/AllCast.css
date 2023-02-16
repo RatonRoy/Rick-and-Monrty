@@ -38,7 +38,9 @@
   bottom: 0.7rem;
   left: 50%;
 }
-
+/* **************************
+For mobile devices 
+************************/
 @media screen and (max-width: 768px) {
   .all-cast-container {
     position: static;
@@ -53,4 +55,13 @@
     flex-wrap: wrap;
   }
 }
-
+/* *****************
+For Tablet devices 
+*****************/
+@media (min-width : 768px) and (max-width : 1024px) {
+  .all-casts{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
+  
+}

@@ -9,8 +9,8 @@ const Cast = ({ cast }) => {
       <section className='cast-container'>
         <div className='img-container'>
           <img src={image} alt='' className='cast-img' />
+          <p className='cast-name'> {name} </p>
         </div>
-        <p className='cast-name'> {name} </p>
       </section>
     </>
   )
