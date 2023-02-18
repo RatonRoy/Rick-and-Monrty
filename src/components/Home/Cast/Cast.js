@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Cast.css'
 
 const Cast = ({ cast }) => {

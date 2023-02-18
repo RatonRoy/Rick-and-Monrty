@@ -33,7 +33,7 @@
 }
 .location-prev{
  /* left: -1.5rem; */
- left: 0;
+ left: -14px;
  width : 25px;
  height : 25px; 
  top: 50%;
@@ -42,7 +42,7 @@
  bottom: 30%;
  width : 25px;
  height : 25px ; 
- right: 0;
+ right: -14px;
 }
 
 @media screen and (max-width : 768px) {

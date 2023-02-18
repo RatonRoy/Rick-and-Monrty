@@ -7,7 +7,6 @@
   position: relative;
 }
 
-
 .hero-title {
   width: 1075px;
   height: 308px;
@@ -82,7 +81,85 @@
 /* ********************
 Responsive design for mobile 
 ***************/
-@media (max-width : 768px) {
-  
-  
+@media (max-width: 992px) {
+  .hero-container {
+    height: 248px;
+    width: 436px;
+    margin-top: 0;
+  }
+  .hero-title {
+    height: 96px;
+    width: 328px;
+    margin-top: 10px;
+  }
+  .hero-title-img {
+    height: 96px;
+    width: 328px;
+  }
+  .bubble {
+    height: 52px;
+    width: 52.5px;
+    left: 26px;
+    top: -30px;
+  }
+  .portal {
+    height: 44px;
+    width: 68.6px;
+    left: 95px;
+    top: -10px;
+  }
+  .gun {
+    height: 119px;
+    width: 66px;
+    right: -10px;
+  }
+  .topBar {
+    display: none;
+  }
+  .hero-footer {
+    /* flex-direction: column; */
+    display: block;
+  }
+  .hero-description {
+    /* order: 1; */
+    height: 36px;
+    width: 260px;
+    font-family: TT Travels;
+    font-size: 10px;
+    /* font-weight: 600; */
+    line-height: 12px;
+    letter-spacing: 0em;
+    text-align: left;
+    /* width: 260px;
+height: 36px; */
+    color: #14d9e6;
+    margin-top: 18px;
+  }
+  .btn-hero {
+    /* order: 2; */
+    /* 
+    height: 35.815670013427734px;
+width: 125.3548355102539px;
+left: 21px;
+top: 305.2105712890625px;
+border-radius: 61.75115203857422px;
+padding: 10px 15px 10px 15px;
+
+    */
+    height: 35.815670013427734px;
+    width: 125.3548355102539px;
+    margin-top: 21px;
+    border-radius: 61.75115203857422px;
+    padding: 10px 15px 10px 15px;
+    font-size: 0.9rem;
+    /* margin-top: 1rem; */
+    margin-left: 60px;
+    display: inline-block;
+    font-family: TT Travels;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 }

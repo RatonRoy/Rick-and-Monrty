@@ -10,13 +10,14 @@
   top: 50%;
   width: 25px;
   height: 25px;
+  left: -14px;
 }
 
 .episode-next {
   width: 25px;
   height: 25px;
   bottom : 30% ; 
-  right: 0;
+  right: -14px;
 }
 .episode{
   display: flex;

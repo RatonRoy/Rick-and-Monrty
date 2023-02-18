@@ -38,7 +38,7 @@ const Casts = () => {
   }
   return (
     <>
-      <section className='casts-wrapper casts-web-devices section-center section-center'>
+      <section className='casts-wrapper casts-web-devices section-center'>
         <div className='casts-header'>
           <p className='text-header'> Meet The Cast </p>
           <button className='btn-all-cast'> View All </button>
@@ -95,7 +95,7 @@ const Casts = () => {
           <AiOutlineArrowLeft className='arrow-icon' />
         </button>
         <div className='casts-container'>
-          {casts.slice(index, index + 2).map((cast) => (
+          {casts.slice(index, index + 3).map((cast) => (
             <Cast key={cast.id} cast={cast}>
               {/* {cast} */}
             </Cast>

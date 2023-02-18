@@ -50,13 +50,13 @@
 **************************/
 
 @media screen and (max-width : 768px ) {
-  .star-one{
+  .star-one img{
     display: none;
   }
-  .star-two{
-    display: none;
+  .star-two img{
+    display: none ;
   }
-  .star-three{
+  .star-three img{
     display: none;
   }
   .logo-img{

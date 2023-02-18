@@ -17,15 +17,15 @@ const Home = () => {
   return (
     <>
       <section className='home-container'>
-        {/* <Spiral> */}
+
         <div className='logo-container'>
           <img src={Logo} alt='Logo img' className='logo-img' />
         </div>
-        {/* <Hero /> */}
+    
         <HeroFinal />
         <Spiral className='spiral' />
         <Casts />
-        {/* <div className="spiral-container"></div> */}
+   
 
         <div className='star-three'>
           <img src={starTwo} alt='' />
@@ -38,7 +38,7 @@ const Home = () => {
           <img src={starThree} alt='' />
         </div>
         <Locations />
-        {/* </Spiral> */}
+
       </section>
     </>
   )
