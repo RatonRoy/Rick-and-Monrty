@@ -10,21 +10,25 @@ import './Home.css'
 // import Location from './Locations/Location'
 import Locations from './Locations/Locations'
 import Spiral from './Spiral/Spiral'
+import HeroFinal from './HeroFinall/HeroFinal';
+import Logo from './HomeAsset/img/Logo.png';
 
 const Home = () => {
   return (
     <>
       <section className='home-container'>
         {/* <Spiral> */}
-
-        <Hero />
+        <div className='logo-container'>
+          <img src={Logo} alt='Logo img' className='logo-img' />
+        </div>
+        {/* <Hero /> */}
+        <HeroFinal />
         <Spiral className='spiral' />
         <Casts />
         {/* <div className="spiral-container"></div> */}
 
-       
         <div className='star-three'>
-          <img src= {starTwo} alt="" />
+          <img src={starTwo} alt='' />
         </div>
         <Episodes />
         <div className='star-one'>

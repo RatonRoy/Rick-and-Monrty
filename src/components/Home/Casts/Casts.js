@@ -47,7 +47,7 @@ const Casts = () => {
           <AiOutlineArrowLeft className='arrow-icon' />
         </button>
         <div className='casts-container'>
-          {casts.slice(index, index + 5).map((cast) => (
+          {casts.slice(index, index + 6).map((cast) => (
             <Cast key={cast.id} cast={cast}>
               {/* {cast} */}
             </Cast>

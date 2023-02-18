@@ -15,8 +15,14 @@
   position: relative;
   margin-bottom: 2rem;
 }
-.logo-container{
-text-align: center;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  /* margin: 2rem 0; */
+}
+.logo-container img {
+  display: inline-block;
+  margin: 2rem 0;
 }
 .star-one{
   position: absolute;
@@ -53,5 +59,9 @@ text-align: center;
   .star-three{
     display: none;
   }
+  .logo-img{
+  width: 134px;
+  height: 29px;
+}
   
 }

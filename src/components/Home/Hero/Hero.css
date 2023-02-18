@@ -1,3 +1,4 @@
+
 @media screen and (min-width : 769px ) {
   /* .hero-container {
   background-image: linear-gradient(
@@ -128,6 +129,7 @@ top: 585px;
 .hero-text-container {
   margin-left: 64px;
 }
+
 .hero-description {
   /* position: absolute; */
   width: 364px;
@@ -283,3 +285,4 @@ color: #14d9e6;
 }
 
 /* ********************End  Start the new hero section  */
+

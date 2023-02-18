@@ -1,0 +1,88 @@
+.hero-container {
+  height: 511px;
+  width: 1475.913818359375px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 132px;
+  position: relative;
+}
+
+
+.hero-title {
+  width: 1075px;
+  height: 308px;
+  margin: 0 auto;
+  margin-top: 130px;
+  position: relative;
+}
+
+.bubble {
+  width: 214px;
+  height: 214px;
+  display: inline;
+  position: absolute;
+  top: -100px;
+  left: 70px;
+}
+
+.gun {
+  height: 331px;
+  width: 318px;
+  display: inline !important;
+  position: absolute;
+  right: 0;
+  bottom: 115px;
+}
+.portal {
+  height: 145px;
+  width: 225px;
+  position: absolute;
+  left: 285px;
+  top: -46px;
+}
+.topBar {
+  position: absolute;
+  right: 24px;
+  width: 50px;
+  height: 10px;
+  top: -25px;
+}
+.hero-footer {
+  display: flex;
+  justify-content: center;
+}
+.btn-hero {
+  display: inline-block;
+  width: 203px;
+  height: 58px;
+  /* padding: 0.5rem 0; */
+  background: linear-gradient(99.46deg, #9dfe00 -10.9%, #14d9e6 97.14%);
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  /* font-size: 1.1rem; */
+}
+
+.hero-description {
+  /* position: absolute; */
+  width: 364px;
+  height: 51px;
+  /* left: 894px;
+  top: 590px; */
+
+  font-family: 'TT Travels';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #14d9e6;
+  margin-left: 64px;
+}
+/* ********************
+Responsive design for mobile 
+***************/
+@media (max-width : 768px) {
+  
+  
+}
