@@ -2,7 +2,6 @@
 import React from 'react'
 import Casts from './Casts/Casts'
 import Episodes from './Episodes/Episodes'
-import Hero from './Hero/Hero'
 import starOne from './HomeAsset/img/homebg/Star-24.png';
 import starTwo from './HomeAsset/img/homebg/Star-23.png';
 import starThree from './HomeAsset/img/homebg/Star-22.png';

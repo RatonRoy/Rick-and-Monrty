@@ -61,6 +61,7 @@
   cursor: pointer;
   color: white;
   /* font-size: 1.1rem; */
+  order: 1;
 }
 
 .hero-description {
@@ -77,6 +78,7 @@
   line-height: 17px;
   color: #14d9e6;
   margin-left: 64px;
+  order: 2;
 }
 /* ********************
 Responsive design for mobile 
